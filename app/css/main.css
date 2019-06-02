@@ -1,0 +1,428 @@
+* {
+	box-sizing: border-box;
+	font-weight: 300;
+}
+
+html,
+body {
+	height: 100%;
+	min-width: 768px;
+	margin: 0;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+strong {
+	font-weight: 500;
+}
+
+.splashscreen {
+    background: #262A2D;
+    height: 100vh;
+}
+
+.sc-container {
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.sc-container svg {
+	display: block;
+	width: 640px;
+	margin: 0 auto;
+}
+
+.splashscreen p {
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	margin-top: 3em;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	background: #262A2D;
+	height: 50px;
+	top: 0;
+	padding: 0 16px;
+}
+
+.nav {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+	float: right;
+}
+
+.nav li {
+	float: left;
+	padding: 17px 14px;
+}
+
+.nav a {
+	color: #A3ADBB;
+}
+
+.nav a:hover {
+	color: white;
+}
+
+.logo{
+	width: 131px;
+}
+
+.icon {
+	width: 16px;
+	height: 16px;
+	fill: currentColor;
+	margin-right: 7px;
+	vertical-align: bottom;
+}
+
+.icon-flowchart {
+	width: 17px;
+}
+
+main {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	position: absolute;
+	top: 50px;
+	bottom: 0;
+}
+
+/*main::after { 
+   content: "";
+   display: block; 
+   clear: both;
+}*/
+
+.sectionLabel {
+	display: table;
+	border: 1px solid #02C385;
+    background: rgba(244, 247, 249, 0.8);
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    /*text-align: center;*/
+    border-radius: 4px;
+    z-index: 30;
+    padding: 7px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #02C385;
+    cursor: pointer;
+}
+
+.sectionLabel p {
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0;
+	line-height: 1;
+	font-weight: 400;
+}
+
+.sectionLabel:hover {
+	background: #02C385;
+	color: white;
+}
+
+#export-diagram:hover {
+	background: #02C385;
+	color: white;
+}
+
+.sectionLabel .icon {
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0;
+	margin-left: 4px;
+    color: inherit;
+}
+
+#export-diagram {
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.editor {
+	position: relative;
+	display: table-cell;
+	vertical-align: top;
+	background: #F4F7F9;
+	width: 33.33%;
+	margin: 0;
+	overflow: scroll;
+	border-right: 1px solid #E3E8EE;
+}
+
+.diagram {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	/*padding: 18px 0 0;*/
+	width: 66.67%;
+	margin: 0;
+	overflow: scroll;
+}
+
+.chart-definiton {
+	width: 33%;
+}
+
+.chart {
+	width: 100%;
+}
+
+#graphDiv {
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+.CodeMirror {
+	height: 100vh;
+	background: #F4F7F9;
+	color: #515253;
+    font-family: "Inconsolata", "Monaco", "Andale Mono", "Lucida Console", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+}
+
+.CodeMirror-gutters {
+	background: #F4F7F9;
+}
+
+.CodeMirror pre {
+	/*padding: 0;*/
+	line-height: 21px;
+}
+
+.CodeMirror-linenumber {
+	line-height: 21px;
+}
+
+.cm-keyword {
+	color: #756BB1 !important;
+}
+
+.cm-endOfSubgraph,
+.cm-subgraphDeclaration,
+.cm-actor,
+.cm-actor-0,
+.cm-actor-1,
+.cm-actor-2 {
+	color: #E31A1C;
+}
+
+.cm-message {
+	color: #3182BD;
+}
+
+.cm-box {
+	color: #3182BD;
+}
+
+.cm-arrow-end,
+.cm-arrow-head,
+.cm-arrow {
+	color: #756BB1;
+}
+
+.cm-activation {
+	color: #756BB1;
+}
+
+.syntaxError {
+	background: pink;
+}
+
+.fragment {
+	font-style: italic;
+}
+
+li.CodeMirror-hint {
+	font-family: "Inconsolata", "Monaco", "Andale Mono", "Lucida Console", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+	line-height: 21px;
+}
+
+/* 弹出框 表单 */
+.blocker {
+	z-index: 40;
+	background: rgba(38,42,45,0.6);
+}
+
+.modal {
+	color: #474C72;
+	max-width: 510px;
+	max-height: 85vh;
+    overflow-y: scroll;
+}
+
+.modal button {
+	border-radius: 4px;
+}
+
+.modal-headline {
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0 0 20px 0;
+}
+
+.modal h2 {
+	font-size: 14px;
+	font-weight: 300;
+	margin: 2em 0 0 0;
+}
+
+.modal pre {
+	font-family: "Inconsolata", "Monaco", "Andale Mono", "Lucida Console", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+	line-height: 1.5;
+	margin: 0.5em 0;
+	background: #F4F7F9;
+	padding: 7px;
+}
+
+.buttons-group-right {
+	text-align: right;
+}
+
+.buttons-group-right button{
+	margin-left: 7px;
+}
+
+button.dangerous-button {
+	background-color: #E31A1C;
+	color: white;
+}
+
+.modal-text {
+	margin: 0;
+	line-height: 1.5;
+	color: #A3ADBB;
+}
+
+h2+.modal-text {
+	margin-top: 4px;
+}
+
+.modal a.close-modal {
+	height: 16px;
+	width: 16px;
+	top: 20px;
+	right: 20px;
+	background-image: url(../images/close.png);
+	background-size: contain;
+}
+
+.modal p a {
+	color: #02C385;
+}
+
+.pure-form label{
+	width: auto !important;
+}
+
+.pure-form {
+	margin-top: 20px;
+}
+
+.pure-form fieldset {
+	padding: 0;
+}
+
+.pure-form-aligned .pure-controls {
+	margin-left: 96px;
+}
+
+#rename-chart-modal .pure-controls {
+	margin-left: 89px;
+}
+
+.pure-button-primary {
+	background-color: #02C385;
+	border: solid 1px #02C385;
+}
+
+/* 弹出框 表格 */
+
+#chartsList {
+	width: 100%;
+	border: 0px;
+	margin-top: 20px;
+}
+
+.pure-table td {
+	border-left: 0px;
+}
+
+.select-chart {
+	cursor: pointer;
+}
+
+.delete-chart,
+.rename-chart {
+	visibility: hidden;
+}
+
+.delete-chart:hover,
+.rename-chart:hover {
+	text-decoration: underline;
+}
+
+.active-row .delete-chart,
+.active-row .rename-chart {
+	visibility: visible;
+}
+
+.delete-chart {
+	color: #E31A1C;
+}
+
+.rename-chart {
+	color: #3182BD;
+}
+
+.current-chart,
+.select-chart:hover {
+	background-color: #F4F7F9;
+}
+
+.select-chart p {
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	width: 18px;
+	margin: 0;
+}
+
+.select-chart td:first-child {
+	padding-right: 0px;
+}
+
+.sequence-diagram-label {
+	background-color: #756BB1 !important;
+}
+
+.flowchart-label {
+	background-color: #3182BD !important;
+}
+
+.edgeLabel div,
+.cluster text,
+.node div {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
+}

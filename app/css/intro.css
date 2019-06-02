@@ -1,0 +1,173 @@
+* {
+	box-sizing: border-box;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+body {
+	font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-size: 16px;
+}
+
+.header {
+	padding: 24px 20px;
+	background-color: #4E6589;
+	color: white;
+
+}
+
+.logo {
+	text-align: center;
+}
+
+.logo svg {
+	height: 46px;
+}
+
+.header h2 {
+	font-size: 16px;
+	text-align: center;
+	margin: 0 auto 24px;
+}
+
+.screenshot-phone {
+	display: block;
+	margin: 0 auto;
+	width: 335px;
+	border-radius: 4px;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.50);
+}
+
+.carousel-phone {
+	width: 335px;
+	margin: 0 auto;
+	border-radius: 4px;
+	background: #4E6589;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.50);
+}
+
+.slick-list {
+	border-radius: 4px;
+}
+
+.fake-btn {
+	width: 100%;
+	text-align: center;
+	background-color: #BAC4D5;
+	border: 1px solid #707A8B;
+	border-radius: 4px;
+	margin: 24px auto 7px;
+	padding: 14px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #88909D;
+	text-shadow: 0px 1px 0px rgba(255,255,255,0.90);
+}
+
+.statement {
+	margin: 0;
+}
+
+.header-content-desktop {
+	display: none;
+	text-align: center;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.act-btn {
+	display: inline-block;
+	padding: 16px 48px;
+	background: #02C385;
+	border-radius: 4px;
+	color: white;
+	margin: 0px auto 58px;
+	text-decoration: none;
+}
+
+.screenshot-lg {
+	display: block;
+	margin: 0 auto;
+}
+
+.carousel {
+	display: none;
+}
+
+.features-wrapper {
+	border-top: 1px solid #E3E8EE;
+	background-color: white;
+}
+
+.features {
+	padding: 32px 20px;
+	text-align: center;
+	color: #474C72;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.features::after {
+	content: "";
+	display: block; 
+	clear: both;
+}
+
+.features section {
+	margin-bottom: 48px;
+}
+
+.features h3 {
+	font-size: 16px;
+	font-weight: 500;
+	margin: 8px auto;
+}
+
+.features p {
+	margin: 0;
+}
+
+.feature-icon {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.header {
+		padding: 60px 0 0;
+	}
+
+	.logo svg {
+		height: 60px;
+	}
+
+	.header h2 {
+		font-size: 24px;
+		margin-bottom: 24px;
+	}
+
+	.header-content-desktop {
+		display: block;
+	}
+
+	.header-content-phone {
+		display: none;
+	}
+}
+
+@media (min-width: 960px) {
+	.features {
+		padding:60px 0 0;
+	}
+
+	.features section {
+		width: 304px;
+		max-width: 33%;
+		float: left;
+		margin-right: 24px;
+	}
+
+	.last {
+		margin-right: 0 !important;
+	}
+}

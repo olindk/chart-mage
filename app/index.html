@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Chart Mage - Draw sequence diagrams and flowcharts at lightning speed.">
+
+    <title>Chart Mage - Draw sequence diagrams and flowcharts at lightning speed.</title>
+
+    <link rel="icon" href="images/favicon.png">
+    <!-- build:css css/style.min.css -->
+    <link rel="stylesheet" href="css/pure-nr-min.css">
+    <link rel="stylesheet" href="css/codemirror.css">
+    <link rel="stylesheet" href="css/show-hint.css">
+    <link rel="stylesheet" href="css/chart-default.css">
+    <link rel="stylesheet" href="css/jquery.modal.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-86337828-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      if (!localStorage.getItem("visited") || window.innerWidth < 768)
+        window.location.replace("intro.html");
+      if (/*@cc_on!@*/false || !!document.documentMode)
+        window.location.replace("browser.html");
+    </script>
+
+    <div class="splashscreen">
+      <div class="sc-container">
+        <svg viewBox="363 255 560 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <path d="M410.968,336.104 C410.968,339.272016 410.368006,342.295986 409.168,345.176 C407.967994,348.056014 406.312011,350.575989 404.2,352.736 C402.087989,354.896011 399.616014,356.623994 396.784,357.92 C393.951986,359.216006 390.904016,359.864 387.64,359.864 C384.855986,359.864 382.024014,359.480004 379.144,358.712 C376.263986,357.943996 373.672012,356.624009 371.368,354.752 C369.063988,352.879991 367.168007,350.408015 365.68,347.336 C364.191993,344.263985 363.448,340.376024 363.448,335.672 L363.448,279.224 C363.448,275.863983 364.023994,272.744014 365.176,269.864 C366.328006,266.983986 367.959989,264.488011 370.072,262.376 C372.184011,260.263989 374.703985,258.608006 377.632,257.408 C380.560015,256.207994 383.799982,255.608 387.352,255.608 C390.712017,255.608 393.831986,256.207994 396.712,257.408 C399.592014,258.608006 402.087989,260.287989 404.2,262.448 C406.312011,264.608011 407.967994,267.199985 409.168,270.224 C410.368006,273.248015 410.968,276.535982 410.968,280.088 L410.968,285.848 L396.28,285.848 L396.28,280.952 C396.28,278.071986 395.464008,275.576011 393.832,273.464 C392.199992,271.351989 389.992014,270.296 387.208,270.296 C383.559982,270.296 381.136006,271.423989 379.936,273.68 C378.735994,275.936011 378.136,278.791983 378.136,282.248 L378.136,334.664 C378.136,337.640015 378.783994,340.13599 380.08,342.152 C381.376006,344.16801 383.703983,345.176 387.064,345.176 C388.024005,345.176 389.055994,345.008002 390.16,344.672 C391.264006,344.335998 392.271995,343.784004 393.184,343.016 C394.096005,342.247996 394.839997,341.192007 395.416,339.848 C395.992003,338.503993 396.28,336.82401 396.28,334.808 L396.28,329.768 L410.968,329.768 L410.968,336.104 Z M422.92,256.472 L437.608,256.472 L437.608,300.392 L455.752,300.392 L455.752,256.472 L470.44,256.472 L470.44,359 L455.752,359 L455.752,313.352 L437.608,313.352 L437.608,359 L422.92,359 L422.92,256.472 Z M506.728,285.992 L506.44,285.992 L499.24,323.144 L513.928,323.144 L506.728,285.992 Z M500.536,256.472 L512.776,256.472 L535.672,359 L520.984,359 L516.664,336.968 L496.648,336.968 L492.328,359 L477.64,359 L500.536,256.472 Z M557.56,302.264 L565.912,302.264 C568.504013,302.264 570.567992,301.904004 572.104,301.184 C573.640008,300.463996 574.815996,299.432007 575.632,298.088 C576.448004,296.743993 576.999999,295.08801 577.288,293.12 C577.576001,291.15199 577.72,288.872013 577.72,286.28 C577.72,283.687987 577.576001,281.40801 577.288,279.44 C576.999999,277.47199 576.400005,275.792007 575.488,274.4 C574.575995,273.007993 573.304008,271.976003 571.672,271.304 C570.039992,270.631997 567.880013,270.296 565.192,270.296 L557.56,270.296 L557.56,302.264 Z M542.872,256.472 L566.488,256.472 C583.768086,256.472 592.408,266.5039 592.408,286.568 C592.408,292.52003 591.472009,297.631979 589.6,301.904 C587.727991,306.176021 584.440024,309.607987 579.736,312.2 L595.576,359 L580.024,359 L566.344,315.224 L557.56,315.224 L557.56,359 L542.872,359 L542.872,256.472 Z M611.272,270.296 L594.28,270.296 L594.28,256.472 L642.952,256.472 L642.952,270.296 L625.96,270.296 L625.96,359 L611.272,359 L611.272,270.296 Z M676.216,256.472 L690.328,256.472 L709.192,310.76 L709.48,310.76 L728.2,256.472 L742.456,256.472 L742.456,359 L727.768,359 L727.768,296.648 L727.48,296.648 L712.936,340.712 L705.592,340.712 L691.192,296.648 L690.904,296.648 L690.904,359 L676.216,359 L676.216,256.472 Z M778.744,285.992 L778.456,285.992 L771.256,323.144 L785.944,323.144 L778.744,285.992 Z M772.552,256.472 L784.792,256.472 L807.688,359 L793,359 L788.68,336.968 L768.664,336.968 L764.344,359 L749.656,359 L772.552,256.472 Z M814.024,280.664 C814.024,276.535979 814.743993,272.888016 816.184,269.72 C817.624007,266.551984 819.519988,263.93601 821.872,261.872 C824.224012,259.80799 826.863985,258.248005 829.792,257.192 C832.720015,256.135995 835.671985,255.608 838.648,255.608 C841.624015,255.608 844.575985,256.135995 847.504,257.192 C850.432015,258.248005 853.071988,259.80799 855.424,261.872 C857.776012,263.93601 859.671993,266.551984 861.112,269.72 C862.552007,272.888016 863.272,276.535979 863.272,280.664 L863.272,285.848 L848.584,285.848 L848.584,280.664 C848.584,277.111982 847.60001,274.496008 845.632,272.816 C843.66399,271.135992 841.336013,270.296 838.648,270.296 C835.959987,270.296 833.63201,271.135992 831.664,272.816 C829.69599,274.496008 828.712,277.111982 828.712,280.664 L828.712,334.808 C828.712,338.360018 829.69599,340.975992 831.664,342.656 C833.63201,344.336008 835.959987,345.176 838.648,345.176 C841.336013,345.176 843.66399,344.336008 845.632,342.656 C847.60001,340.975992 848.584,338.360018 848.584,334.808 L848.584,315.512 L836.92,315.512 L836.92,302.552 L863.272,302.552 L863.272,334.808 C863.272,339.032021 862.552007,342.703984 861.112,345.824 C859.671993,348.944016 857.776012,351.53599 855.424,353.6 C853.071988,355.66401 850.432015,357.223995 847.504,358.28 C844.575985,359.336005 841.624015,359.864 838.648,359.864 C835.671985,359.864 832.720015,359.336005 829.792,358.28 C826.863985,357.223995 824.224012,355.66401 821.872,353.6 C819.519988,351.53599 817.624007,348.944016 816.184,345.824 C814.743993,342.703984 814.024,339.032021 814.024,334.808 L814.024,280.664 Z M876.232,256.472 L920.008,256.472 L920.008,270.296 L890.92,270.296 L890.92,300.392 L916.264,300.392 L916.264,314.216 L890.92,314.216 L890.92,344.312 L920.008,344.312 L920.008,359 L876.232,359 L876.232,256.472 Z" id="CHART-MAGE" stroke="none" fill="#FFFFFF" fill-rule="evenodd"></path>
+        </svg>
+        <p>Preparing all the things...</p>
+      </div>
+    </div>
+
+    <!-- build:js js/bundle.js -->
+    <script src="js/lib/jquery-3.1.0.min.js"></script>
+    <script src="js/lib/jquery.modal.min.js"></script>
+    <script src="js/lib/mermaidAPI.min.js"></script>
+    <script src="js/lib/codemirror.js"></script>
+    <script src="js/lib/simple.js"></script>
+    <script src="js/lib/show-hint.js"></script>
+    <script src="js/lib/uuid.js"></script>
+    <script src="js/seqdef-hint.js"></script>
+    <script src="js/flowchart-hint.js"></script>
+    <script src="js/app.js"></script>
+    <!-- endbuild -->
+
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+      <symbol id="icon-about" viewBox="0 0 32 32">
+      <title>about</title>
+      <path class="path1" d="M0 16c0 8.836 7.164 16 15.999 16 8.837 0 16.001-7.164 16.001-16 0-8.837-7.164-16-16.001-16-8.835 0-15.999 7.163-15.999 16zM14 12h4v14h-4v-14zM14 6h4v4h-4v-4z"></path>
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 16 16">
+      <title>mail</title>
+      <path class="path1" d="M7.998 7.729l8.002-3.769v-1.959h-16v1.953zM8.002 9.94l-8.002-3.78v7.84h16v-7.828z"></path>
+      </symbol>
+      <symbol id="icon-file" viewBox="0 0 28 32">
+      <title>file</title>
+      <path class="path1" d="M0 0v32h28v-32h-28zM2 2h24v28h-24v-28zM6 6h16v4h-16v-4zM6 14h16v4h-16v-4zM6 22h12v4h-12v-4z"></path>
+      </symbol>
+      <symbol id="icon-flowchart" viewBox="0 0 34 32">
+      <title>flowchart</title>
+      <path class="path1" d="M18 6v10h-2v-10h-8v-6h18v6h-8zM6 26v-12h-2v12h-4v6h10v-6h-4zM30 26v-12h-2v12h-4v6h10v-6h-4zM18 14h10v2h-10v-2zM6 14h10v2h-10v-2z"></path>
+      </symbol>
+      <symbol id="icon-seq" viewBox="0 0 32 32">
+      <title>seq</title>
+      <path class="path1" d="M0 0h14v6h-14v-6zM18 0h14v6h-14v-6zM0 26h14v6h-14v-6zM6 6h2v20h-2v-20zM24 6h2v20h-2v-20zM18 26h14v6h-14v-6z"></path>
+      </symbol>
+      <symbol id="icon-vertical_align_bottom" viewBox="0 0 16 16">
+      <title>vertical_align_bottom</title>
+      <path class="path1" d="M2.656 12.656h10.688v1.344h-10.688v-1.344zM10.656 8.656l-2.656 2.688-2.656-2.688h2v-6.656h1.313v6.656h2z"></path>
+      </symbol>
+      <symbol id="icon-help_outline" viewBox="0 0 16 16">
+      <title>help_outline</title>
+      <path class="path1" d="M8 4c1.469 0 2.656 1.188 2.656 2.656 0 1.656-2 1.844-2 3.344h-1.313c0-2.156 2-2 2-3.344 0-0.719-0.625-1.313-1.344-1.313s-1.344 0.594-1.344 1.313h-1.313c0-1.469 1.188-2.656 2.656-2.656zM8 13.344c2.938 0 5.344-2.406 5.344-5.344s-2.406-5.344-5.344-5.344-5.344 2.406-5.344 5.344 2.406 5.344 5.344 5.344zM8 1.344c3.688 0 6.656 2.969 6.656 6.656s-2.969 6.656-6.656 6.656-6.656-2.969-6.656-6.656 2.969-6.656 6.656-6.656zM7.344 12v-1.344h1.313v1.344h-1.313z"></path>
+      </symbol>
+      </defs>
+    </svg>
+    
+    <nav class="hidden">
+        <img src="images/logo.png" class="logo">
+
+        <ul class="nav">
+          <li>
+            <a href="#showChartsList" rel="modal:open" id="show-charts-button">
+              <svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg>My Charts
+            </a>
+          </li>
+          <li><a href="#newSequenceDiagram" rel="modal:open">
+            <svg class="icon icon-seq"><use xlink:href="#icon-seq"></use></svg>New Sequence Diagram</a>
+          </li>
+          <li>
+            <a href="#newFlowchart" rel="modal:open">
+              <svg class="icon icon-flowchart"><use xlink:href="#icon-flowchart"></use></svg>New Flowchart
+            </a>
+          </li>
+          <li><a href="#about-chart-mage" rel="modal:open" title="About"><svg class="icon icon-about"><use xlink:href="#icon-about"></use></svg></a></li>
+          <li><a href="mailto:chartmage@gmail.com" title="Feedback"><svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg></a></li>
+        </ul>
+    </nav>
+    
+    <main role="main" class="hidden">
+      <section class="editor">
+        <div class="sectionLabel" id="show-syntax">
+          <p href="#">Magic Spell</p>
+          <svg class="icon icon-help_outline"><use xlink:href="#icon-help_outline"></use></svg>
+        </div>
+        <textarea id="code" name="code">
+        </textarea>
+      </section>
+
+      <section class="diagram">
+        <div class="sectionLabel" id="export-diagram">
+          <p href="">Generated Diagram</p>
+          <svg class="icon icon-vertical_align_bottom"><use xlink:href="#icon-vertical_align_bottom"></use></svg>
+        </div>
+        <div class="chart" id="chart"></div>
+      </section>
+    </main>
+
+    <!-- Modal Dialogs-->
+    <div id="newFlowchart" style="display:none;">
+      <h1 class="modal-headline">New Flowchart</h1>
+      <p class="modal-text">Your charts will be saved in your browser, so they should be here the next time (unless you clear your browser's cache).</p>
+      <form class="pure-form pure-form-aligned new-chart" data-chart-type="flowchart" autocomplete="off">
+        <fieldset>
+          <div class="pure-control-group">
+            <label for="flowchart-name-input">Chart Name</label>
+            <input type="text" name="name" placeholder="Chart Name" id="flowchart-name-input" required><br>
+          </div>
+          <div class="pure-controls">
+            <button type="submit" class="pure-button pure-button-primary">Create</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="newSequenceDiagram" style="display:none;">
+      <h1 class="modal-headline">New Sequence Diagram</h1>
+      <p class="modal-text">Your charts will be saved in your browser, so they should be here the next time (unless you clear your browser's cache).</p>
+      <form class="pure-form pure-form-aligned new-chart" data-chart-type="sequenceDiagram" autocomplete="off">
+        <fieldset>
+          <div class="pure-control-group">
+            <label for="sequence-diagram-name-input">Chart Name</label>
+            <input type="text" name="name" placeholder="Chart Name" id="sequence-diagram-name-input" required><br>
+          </div>
+          <div class="pure-controls">
+            <button type="submit" class="pure-button pure-button-primary">Create</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="showChartsList" style="display:none;">
+      <h1 class="modal-headline">My Charts</h1>
+      <p class="modal-text">Your charts are saved in your browser. If you clear your browser's cache, they will be lost.</p>
+      <table class="pure-table" id="chartsList">
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="confirm-delete-chart" style="display:none;">
+      <h1 class="modal-headline">Delete Confirmation</h1>
+      <p>Are you sure you want to delete <strong></strong>?</p>
+      <div class="buttons-group-right">
+        <button id="cancel-del-button" class="pure-button">Cancel</button>
+        <button id="confirm-del-button" class="dangerous-button pure-button">Delete</button>
+      </div>
+    </div>
+
+    <div id="rename-chart-modal" style="display:none;">
+      <h1 class="modal-headline">Rename</h1>
+      <p>Rename <strong></strong> as:</p>
+      <form class="pure-form pure-form-aligned" id="rename-form" autocomplete="off">
+        <fieldset>
+          <div class="pure-control-group">
+            <label for="rename-input">New Name</label>
+            <input type="text" name="name" placeholder="New Name" id="rename-input" required><br>
+          </div>
+          <div class="pure-controls">
+            <button type="submit" class="pure-button pure-button-primary">Save</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="about-chart-mage" style="display:none;">
+      <h1 class="modal-headline">About Chart Mage</h1>
+      <p>Chart Mage is a tool for drawing sequence diagrams and flowcharts based on a simple syntax, in a similar manner as markdown.</p>
+      <p>Chart Mage was created by Junlin Shang.</p>
+      <p>Many thanks to the cool projects <a href="http://knsv.github.io/mermaid">mermaid</a>, <a href="http://codemirror.net/">Codemirror</a>, <a href="http://underscorejs.org/">Underscore</a>, <a href="https://github.com/broofa/node-uuid">node-uuid</a>, <a href="http://jquerymodal.com/">jQuery Modal</a>, <a href="https://chriskempson.github.io/base16/">base16</a>. Chart Mage was made possible by them.</p>
+      <p>If you have any thought about Chart Mage, feel free to <a href="mailto:chartmage@gmail.com">contact me.</a></p>
+    </div>
+
+    <div id="chart-not-found" style="display:none;">
+      <h1 class="modal-headline">Chart Not Found</h1>
+      <p>The chart you asked for is missing. This is probably caused by clearance of browser's localStorage.</p>
+      <p>Please <strong>refresh the page</strong> to continue.</p>
+    </div>
+
+    <div id="flowchart-syntax" style="display:none;">
+      <h1 class="modal-headline">Magic Spells for Flowchart</h1>
+
+      <h2>Rounded Rectangle</h2>
+      <pre class="cm-box">((Enclosing text with double parenthesis))</pre>
+
+      <h2>Rectangle</h2>
+      <pre class="cm-box">Just type the text</pre>
+
+      <h2>Rhombus</h2>
+      <pre class="cm-box">Would you please leave a question mark at the end?</pre>
+
+      <h2>Solid Line with Arrowhead</h2>
+      <pre class="cm-arrow">->></pre>
+
+      <h2>Solid Line with Arrowhead and text</h2>
+      <pre class="cm-arrow">- some text ->></pre>
+
+      <h2>Dotted Line with Arrowhead</h2>
+      <pre class="cm-arrow">-->></pre>
+
+      <h2>Dotted Line with Arrowhead and text</h2>
+      <pre class="cm-arrow">-- some text -->></pre>
+
+      <h2>Subgraph</h2>
+      <pre><span class="cm-subgraphDeclaration">subgraph title</span><br><span class="cm-box cm-process">  graph definition</span><br><span class="cm-endOfSubgraph">end</span></pre>
+    </div>
+
+    <div id="sequence-diagram-syntax" style="display:none;">
+      <h1 class="modal-headline">Magic Spells for Sequence Diagram</h1>
+
+      <h2>Participant</h2>
+      <p class="modal-text">You don't have to include the participant lines. But by doing so you can explicitly specify the actor's order of appearance.</p>
+      <pre><span class="cm-keyword cm-participant">participant</span> <span class="cm-actor">Alice</span></pre>
+
+      <h2>Message</h2>
+      <pre><span class="cm-actor">[Actor]</span><span class="cm-arrow">[Arrow]</span><span class="cm-actor">[Actor]</span><span class="cm-colon">:</span><span class="cm-message"> Message Text</span></pre>
+
+      <h2>Solid Line with Arrowhead</h2>
+      <pre class="cm-arrow">->></pre>
+
+      <h2>Dotted Line with Arrowhead</h2>
+      <pre class="cm-arrow">-->></pre>
+
+      <h2>Solid Line with A Cross at The End</h2>
+      <pre class="cm-arrow">-x</pre>
+
+      <h2>Dotted Line with A Cross at The End</h2>
+      <pre class="cm-arrow">--x</pre>
+
+      <h2>Activation</h2>
+      <pre><span class="cm-actor">Alice </span><span class="cm-arrow">-&gt;&gt;</span><span class="cm-activation">+</span> <span class="cm-actor">John</span><span class="cm-colon">:</span><span class="cm-message"> Activate</span><br><span class="cm-actor">John </span><span class="cm-arrow">--&gt;&gt;</span><span class="cm-activation">-</span> <span class="cm-actor">Alice</span><span class="cm-colon">:</span><span class="cm-message"> Dedicated</span></pre>
+
+      <h2>Loop Fragment</h2>
+      <pre><span class="cm-keyword cm-indent">loop</span><span class="cm-before-description"> </span><span class="cm-description">Loop Title</span><br><span class="cm-tab" role="presentation" cm-text=" ">  </span><span class="cm-actor">Alice </span><span class="cm-arrow">-&gt;</span>&gt; <span class="cm-actor">John</span><span class="cm-colon">:</span><span class="cm-message"> How you doing?</span><br><span class="cm-tab" role="presentation" cm-text=" ">  </span><span class="cm-actor">John </span><span class="cm-arrow">--&gt;</span>&gt; <span class="cm-actor">Alice</span><span class="cm-colon">:</span><span class="cm-message"> Fine. How you doing?</span><br><span class="cm-keyword cm-dedent">end</span></pre>
+
+      <h2>Alt Fragment</h2>
+      <pre><span class="cm-actor">Alice</span><span class="cm-arrow">-&gt;</span>&gt;<span class="cm-actor">John</span><span class="cm-colon">:</span><span class="cm-message"> Hello John, how are you?</span><br><span class="cm-keyword cm-indent">alt</span><span class="cm-before-description"> </span><span class="cm-description">is sick</span><br><span class="cm-tab" role="presentation" cm-text="  ">  </span><span class="cm-actor">John</span><span class="cm-arrow">-&gt;</span>&gt;<span class="cm-actor">Alice</span><span class="cm-colon">:</span><span class="cm-message"> Not so good :(</span><br><span class="cm-keyword cm-indent">else</span><span class="cm-before-description"> </span><span class="cm-description">is well</span><br><span class="cm-tab" role="presentation" cm-text="  ">  </span><span class="cm-actor">John</span><span class="cm-arrow">-&gt;</span>&gt;<span class="cm-actor">Alice</span><span class="cm-colon">:</span><span class="cm-message"> Feeling fresh like a daisy</span><br><span class="cm-keyword cm-dedent">end</span></pre>
+
+      <h2>Opt Fragment</h2>
+      <pre><span class="cm-keyword cm-indent">opt</span><span class="cm-before-description"> </span><span class="cm-description">Extra response</span><br><span class="cm-tab" role="presentation" cm-text="  ">  </span><span class="cm-actor">John</span><span class="cm-arrow">-&gt;</span>&gt;<span class="cm-actor">Alice</span><span class="cm-colon">:</span><span class="cm-message"> Thanks for asking</span><br><span class="cm-keyword cm-dedent">end</span></pre>
+
+      <h2>Note</h2>
+      <p class="modal-text">You can add notes by the notation:<br>Note [ right of | left of | over ] [Actor]: Text in note content</p>
+      <pre><span class="cm-keyword cm-note">Note</span> <span class="cm-keyword cm-note-direction">right of </span><span class="cm-actor">John</span><span class="cm-colon">:</span><span class="cm-message"> Text in note</span></pre>
+      <p class="modal-text">You can also create notes spanning two participants:</p>
+      <pre><span class="cm-keyword cm-note">Note</span> <span class="cm-keyword cm-note-direction">over </span><span class="cm-actor">Alice, John</span><span class="cm-colon">:</span><span class="cm-message"> Text in note</span></pre>
+    </div>
+
+    <div id="can-not-export-flowchart" style="display:none;">
+      <h1>Unable to download flowchart</h1>
+      <p>This is restricted by your browser, please use the latest version of <a href="http://www.google.com/chrome/">Chrome</a> or <a href="http://www.firefox.com">Firefox</a>.</p>
+    </div>
+
+    <div id="can-not-export-seq" style="display:none;">
+      <h1>Unable to download the diagram</h1>
+      <p>This is restricted by your browser, please use the latest version of <a href="http://www.google.com/chrome/">Chrome</a> or <a href="http://www.firefox.com">Firefox</a>.</p>
+    </div>
+  </body>
+</html>
